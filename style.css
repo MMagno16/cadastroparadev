@@ -1,42 +1,58 @@
-/* *{
+ *{
     margin: 0;
     padding: 0;
-} */
+} 
 #titulo {
-    font-family: sans-serif;
-    color: #380b61;
-    margin-left: 7%;
+    font-family: 'Lucida Sans Unicode';
+    color: #9e6f8c;
+    margin-left: 5%;
 }
 #subtitulo {
-    font-family: sans-serif;
-    color: #380b61;
+    font-family: 'Lucida sans';
+    color: #bd87a8;
     margin-left: 10%;
 }
+#check{
+    display: inline-block;
+}
 
-fieldset{
+fieldset {
     border:0;
 }
+
 body{
-    background-color: #F0F8FF;
-    font-family: sans-serif;
+    background-color: #ddd4e0;
+    font-family: 'Trebuchet MS';
     font-size: 1em;
-    color:#59429d;
+    color:#9e6488;
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
 }
 
 input, select, textarea, button{
+    font-family:'Trebuchet MS';
+    font-size: 1em;
+    color: #9e6488;
     border-radius: 5px;
 }
+
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
 
 .campo{
     margin-bottom: 1em;
 }
 
 .campo label {
-    margin-bottom: 0.2 em;
-    color: #59429d;
+    margin-bottom: 0.2em;
+    color: #70435f;
     display: block;
 }
 
@@ -47,7 +63,7 @@ fieldset.grupo .campo{
 
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
     padding: 0.2em;
-    border: 1px solid #59429d;
+    border: 1px solid #f3dff1;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
 }
@@ -57,30 +73,31 @@ fieldset.grupo .campo{
 }
 
 .campo input:focus, .campo select:focus, .campo textarea:focus{
-    background: #E0E0F8;
+    background: #f5e0f0;
 }
 
-.botao{
+.botão{
     font-size: 1.2em;
-    background: #59429d;
+    background: #9c7594;
     border: 0;
     margin-bottom: 1em;
-    color:#fff;
+    color:#f7e6f1;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     position: absolute;
-    top: 90%;
+    top: 94%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
 
-.botao:hover{
-    background: #ccbbff;
-    box-shadow: 2 px 2px 2px rgba(0,0,0,0.2);
+.botão:hover{
+    background: #e0bdd6;
+    box-shadow: inset 2px 2px 2px rgba(14, 13, 13, 0.2);
     text-shadow: none;
 }
-#check{
-    display: inline-block;
+
+.botao, select{
+    cursor: pointer;
 }
